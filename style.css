@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assetsontsHankenGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+/*# sourceMappingURL=style.css.map */
