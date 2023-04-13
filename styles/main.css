@@ -1,3 +1,35 @@
+.button {
+  color: white;
+  line-height: 1;
+  background: #303b5a;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 100vw;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7857ff), to(#2e2be9));
+  background: linear-gradient(#7857ff, #2e2be9);
+  z-index: -1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  border-radius: 100vw;
+}
+
+.button:hover:before {
+  opacity: 1;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
