@@ -28,7 +28,7 @@ body {
 .results {
     background: linear-gradient($light-blue, $light-royal-blue);
     text-align: center;
-    color: $white-light;
+    color: rgba($white, 0.7);
     border-radius: 0 0 2rem 2rem;
     padding: $padding calc($padding * 1.5);
 }
@@ -62,7 +62,6 @@ body {
     font-weight: 800;
     font-size: 5rem;
     color: $white;
-
 }
 
 .result-rank {

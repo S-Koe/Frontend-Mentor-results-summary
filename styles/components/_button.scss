@@ -1,7 +1,7 @@
 .button {
-    color:$White;
+    color:$white;
     line-height: 1;
-    background: $Dark-gray-blue;
+    background: $dark-gray-blue;
     padding: 1rem 2rem;
     border: 0;
     border-radius: 100vw;
@@ -16,7 +16,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient($Light-blue, $Light-royal-blue);
+        background: linear-gradient($light-blue, $light-royal-blue);
         z-index: -1;
         transition: opacity 0.3s ease-in-out;
         opacity: 0;
