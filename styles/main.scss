@@ -30,7 +30,7 @@ body {
     text-align: center;
     color: $White-light;
     border-radius: 0 0 2rem 2rem;
-    padding: $padding;
+    padding: $padding calc($padding * 1.5);
 }
 
 .summary {
