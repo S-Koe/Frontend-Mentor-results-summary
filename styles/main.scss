@@ -1,6 +1,8 @@
 @import "components/colors";
 @import "components/button";
 
+$padding: 2.5rem;
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -13,17 +15,47 @@ body {
     color: $Dark-gray-blue;
 }
 
-@media (min-width: 600px) {
-    body {
-        min-height: 100vh;
-        display:grid;
-        place-items: center;
-    }
-}
-
 .section-title {
     font-weight: 700;
     font-size: 1.75rem;
 }
 
+.result-summary {
+    max-width: 46rem;
+    display: grid;        
+}
+
+.results {
+    background: linear-gradient($Light-blue, $Light-royal-blue);
+    text-align: center;
+    color: $White-light;
+    border-radius: 0 0 2rem 2rem;
+    padding: $padding; 
+}
+
+.summary {
+    padding: $padding;
+}
+
+
+@media (min-width: 600px) {
+
+    body {
+        min-height: 100vh;
+        display:grid;
+        place-items: center;
+    }
+
+    .result-summary {
+        grid-template-columns: 1fr 1fr;
+        border-radius: 2rem;    
+        box-shadow: .5rem 1rem 3rem $Dark-gray-shadow; 
+        margin-inline: 1rem;            
+    }
+
+    .results {
+        border-radius: 2rem;
+
+    }
+}
 
