@@ -17,7 +17,7 @@ body {
 
 .section-title {
     font-weight: 700;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .result-summary {
@@ -30,12 +30,107 @@ body {
     text-align: center;
     color: $White-light;
     border-radius: 0 0 2rem 2rem;
-    padding: $padding; 
+    padding: $padding;
 }
 
 .summary {
     padding: $padding;
 }
+
+.grid-flow {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.grid-flow[data-spacing="large"] {
+    gap: 2rem;
+}
+
+.result-score {
+    width: 12rem;
+    margin: auto;
+    background: linear-gradient($Violet-blue, $Persian-blue);
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-content: center;
+}
+
+.result-score span {
+    display: block;
+    font-weight: 800;
+    font-size: 5rem;
+    color: $White;
+
+}
+
+.result-rank {
+    color: $White;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    }
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.data-one {
+    background-color: rgba($Light-red, .1);    
+}
+
+.data-two {
+    background-color: rgba($Light-yellow, 0.1);
+}
+
+.data-three {
+    background-color: rgba($Light-green, 0.1);
+}
+
+.data-four {
+    background-color: rgba($Light-blue, 0.1);
+}
+
+.summary-item-title {
+    font-weight: 700;    
+}
+
+.title-one {
+    color: rgba($Light-red, .8);
+}
+
+.title-two {
+    color: rgba($Light-yellow, 0.8);
+}
+
+.title-three {
+    color: rgba($Light-green, 1);
+}
+
+.title-four {
+    color: rgba($Cobalt-blue, .9);
+}
+
+.summary-score {
+    font-weight: 800;
+    color: rgba($Dark-gray-blue, .5);
+}
+
+.summary-score span {
+    color: $Dark-gray-blue;
+}
+
 
 
 @media (min-width: 600px) {
@@ -49,13 +144,12 @@ body {
     .result-summary {
         grid-template-columns: 1fr 1fr;
         border-radius: 2rem;    
-        box-shadow: .5rem 1rem 3rem $Dark-gray-shadow; 
+        box-shadow: .5rem 1rem 3rem rgba($Dark-gray-blue, .2); 
         margin-inline: 1rem;            
     }
 
     .results {
         border-radius: 2rem;
-
     }
 }
 
