@@ -55,6 +55,7 @@ body {
     aspect-ratio: 1/1;
     display: grid;
     place-content: center;
+    
 }
 
 .result-score span {
@@ -62,7 +63,7 @@ body {
     font-weight: 800;
     font-size: 5rem;
     color: $white;
-}
+}                
 
 .result-rank {
     color: $white;
